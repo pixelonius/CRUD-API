@@ -7,7 +7,8 @@ const contactSchema = new mongoose.Schema({
   },
   email:{
     type: String,
-    required: true
+    required: true,
+    match: /^[^\s@]+@[^\s@]+\.[^\s@]+$/
   },
   phone:{
     type: String,

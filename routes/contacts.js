@@ -57,6 +57,7 @@ router.put('/:id',getContact,async (req,res)=>{
   }
   try{
     const updatedContact=await res.contact.save()
+    res.json(updatedContact)
     res.json({message: "Updated succesful!"})
   }
   catch(err){
