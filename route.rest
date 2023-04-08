@@ -1,0 +1,12 @@
+GET http://localhost:3000/contacts/
+
+###
+
+POST http://localhost:3000/contacts
+Content-Type: :application/json
+
+{
+  "name": "Razvan",
+  "email":"razvan@razvan.com",
+  "phone":"a77777",
+}
